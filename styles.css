@@ -1,4 +1,4 @@
-/*===============
+/*=============== 
   global styles
 ===============*/
 
@@ -36,11 +36,11 @@ body {
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
+  --clr-bg: #180121; /* Dark purple background */
+  --clr-bg-alt: #2e073e; /* Slightly lighter purple for alternative backgrounds */
+  --clr-fg: #e0d6f5; /* Light lavender foreground text */
+  --clr-fg-alt: #f2e6ff; /* Even lighter for headings and accents */
+  --clr-primary: #b388ff; /* Bright purple for primary buttons and links */
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -92,7 +92,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   h1 {
     font-size: 2.6rem;
   }
@@ -169,7 +169,7 @@ button {
   bottom: 0;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
   transition: right 0.2s ease-in-out;
 }
 
@@ -265,12 +265,14 @@ main {
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 1200px;
+  margin: 2.4em auto; /* Center horizontally */
+  text-align: center;  /* Center the text inside */
 }
 
-.about__desc,
-.about__contact {
+.about__desc, {
   margin-top: 2.4em;
+  text-align: center; /* Center the text inside */
 }
 
 .about .link--icon {
